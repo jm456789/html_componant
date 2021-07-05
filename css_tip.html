@@ -1,0 +1,386 @@
+<!Doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>css_tip</title>
+	<link rel="stylesheet" type="text/css" href="css/2020-0-compornent/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/2020-0-compornent/font_face.css" />
+    <link rel="stylesheet" type="text/css" href="css/2020-0-compornent/layout.css" />
+	<script type="text/javascript" src="js/accordion/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/2020-0-compornent/layout.js"></script> <!--conpnant 레이아웃 navi js-->
+    
+    <link rel="stylesheet" type="text/css" href="css/css_tip/css_tip.css" /> <!-- 안가져가도 된다~ -->
+    <script type="text/javascript" src="js/css_tip/css_tip.js"></script>
+</head>
+<body>
+    
+    <div id="wrap">
+        
+        <script language="JavaScript" src="js/2020-0-compornent/imp_left_menu.js"></script> <!-- 모든페이지 공통-left_menu import -->
+        
+        <div class="inner">
+            <!-- con_body -->    
+            <div id="con_body">
+                
+                <!-- 1 -->
+                <div class="comp_cont" id="cont1">
+                    <p class="comp_tit">1. css로 텍스트 라인만 보이게 하기 (수성별빛 http://xn--bm3b42ag3dn0a.com/)<span class="state1">css 필요</span></p>
+                    <div>
+                        <span class="txt_outline">동해물과 백두산이~~</span>
+                    </div>
+                </div>
+                <!-- 1 -->
+                
+                <!-- 2 -->
+                <div class="comp_cont" id="cont2">
+                    <p class="comp_tit">2. border에 gradient 주기 (중앙요양병원-진료안내-진료과목 http://jahospital.net/contents/02_clinic/sub01.html)<span class="state1">css 필요</span></p>
+                    <div>
+                        <ul class="border_gra">
+                            <li class="on"><a href="">가지 (뽀려온거)</a></li>
+                            <li class="oon"><a href="">토마토 (내가 쓰는 방식)</a></li>
+                            <li><a href="">오이</a></li>
+                            <li><a href="">수박</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 2 -->
+                
+                <!-- 3 -->
+                <div class="comp_cont" id="cont3">
+                    <p class="comp_tit">3. header - menu에서 마우스 오버 시 나타나는 2차 메뉴 배경 자동으로 맞춰지게 하는 법</p>
+                    <div>
+                        -&gt; position:relative를 영역이 안잡힌(ex:class="w_inner") 맨 상단(ex:class="header")에 준 후 ul을 div로 감싸고 그 안에 div 하나 더 감싸서 영역 준 후 안에 ul넣기<br /><br />
+                        .header<span class="fc_v">(position:relative)</span> &gt; .w_inner<span class="fc_v">(width:1200px)</span> &gt; ul &gt; li &gt; div<span class="fc_v">(position:absolute)</span> &gt; div<span class="fc_v">(width:1200px 선택사항)</span> &gt; ul...
+                        <br /><br />
+                        <div><a href="example/css_tip_3_header-menu.html" target="_blank"><span class="state2">새창 열기</span></a></div>
+                        <br />
+                    </div>
+                </div>
+                <!-- 3 -->
+                
+                <!-- 4 -->
+                <div class="comp_cont" id="cont4">
+                    <p class="comp_tit">4. 모바일에서 pc버전 그대로 볼 수 있게(너비 줄이면 html 비율 맞게 그대로 줄어들게)</p>
+                    <div>
+                        &lt;head&gt; 에서 <br />
+                        &lt;meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" /&gt; 없애면 됨.. <br />
+                        그리고 body나 전체 감싸준 <span class="fc_v">.wrap에 min-width:1200px;</span> 주면 <span class="fc_v">배경준거 잘리는 현상</span>도 해결할 수 있다.
+                    </div>
+                </div>
+                <!-- 4 -->
+                
+                <!-- 5 -->
+                <div class="comp_cont" id="cont5">
+                    <p class="comp_tit">5. 여러개 묶음</p>
+                    <div>
+                        1. input[type=text]::-ms-clear{display: none;} <span class="state1">-&gt; ie에서 input에 focus시 x버튼 제거(토토즐 유목화 리스트 인풋)</span><br /><br />
+                        2. select { -webkit-appearance: none; -moz-appearance: none; appearance: none; background: url(../images/select_arrow.png) no-repeat 95% 50%; }<br />
+                        select::-ms-expand { display: none; } <span class="state1">-&gt; select 화살표 꾸미기(퀸즈볼 회원가입 셀렉트박스)</span><br /><br />
+                        3. input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button{-webkit-appearance:none; margin:0;} <br />
+                        <span class="state1">-&gt; number 마우스 오버 시 오른쪽 스핀 버튼 나타나지 않게(퀸즈볼 회원가입 비밀번호)</span><br /><br />
+                    </div>
+                </div>
+                <!-- 5 -->
+                
+                <!-- 6 -->
+                <div class="comp_cont" id="cont6">
+                    <p class="comp_tit">6. float:left 가운데 정렬(퀸즈볼 서브페이지 탭)<span class="state1">css 필요</span></p>
+                    <div>
+                        <ul class="float_sort">
+                            <li><a href="">메뉴일까?</a></li>
+                            <li><a href="">아닐까?</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 6 -->
+                
+                <!-- 7 -->
+                <div class="comp_cont" id="cont7">
+                    <p class="comp_tit">7. 양 옆 높이 동일하게 flex1(토토즐 피라미드 - tea1)<span class="state1">css 필요</span></p>
+                    <div>
+                        <p>flex를 사용할 때 flex준 <span class="fc_v">바로 아래 자식</span>의 높이만 컨트롤 함. <br />
+                        flex오류? 로 특수문자는 word-break가 먹지 않음.</p>
+                        <ul class="pyramid_idea_card flex_list">
+                            <li><p>플라스틱 사용 줄이기!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p></li>
+                            <li><p>짧은 거리는 차를 타지 않기</p></li>
+                            <li><p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p></li>
+                            <li><p></p></li><!-- 내용 없을 경우, 스페이스(한칸)도 없어야 함 -->
+                            <li><p></p></li><!-- 내용 없을 경우, 스페이스(한칸)도 없어야 함 -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- 7 -->
+                
+                <!-- 8 -->
+                <div class="comp_cont" id="cont8">
+                    <p class="comp_tit">8. 양 옆 높이 동일하게 flex8(토토즐 생선뼈 - tea2)<span class="state1">css 필요</span></p>
+                    <div>
+                        <div class="fishbone_wrap">
+                            <ol>
+                                <li>
+                                    <p><span>1. 비혼율이 높아졌다</span></p>
+                                    <ul>
+                                        <li>비혼세를 받는다 비혼세를 비혼세를</li>
+                                        <li>비혼세를 받는다</li>
+                                        <li>비혼세를 받는다</li>
+                                        <li>결혼가정 세금감면</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><span>2. 비혼율이 높아졌다</span></p>
+                                    <ul>
+                                        <li>비혼세를 받는다</li>
+                                        <li>결혼가정 세금감면</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><span>3. 비혼율이 높아졌다</span></p>
+                                    <ul>
+                                        <li>비혼세를 받는다</li>
+                                        <li>결혼가정 세금감면</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><span>4. 비혼율이 높아졌다</span></p>
+                                    <ul>
+                                        <li>비혼세를 받는다</li>
+                                        <li>결혼가정 세금감면</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><span>5. 비혼율이 높아졌다</span></p>
+                                    <ul>
+                                        <li>비혼세를 받는다</li>
+                                        <li>결혼가정 세금감면</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><span>6. 비혼율이 높아졌다</span></p>
+                                    <ul>
+                                        <li>비혼세를 받는다</li>
+                                        <li>결혼가정 세금감면</li>
+                                    </ul>
+                                </li>
+                            </ol>
+						</div>
+                    </div>
+                </div>
+                <!-- 8 -->
+                
+                <!-- 9 -->
+                <div class="comp_cont" id="cont9">
+                    <p class="comp_tit">9. 핀터레스트 타입(masonry.js) css만 사용해서 만들기<span class="state1">css 필요</span></p>
+                    <div>
+                        <p>레이아웃은 column-count와 column-width값이 있음. column-width값이 브라우저를 줄였을 때 좀 더 유연함.</p>
+                        <div class="columns">
+                            <figure>
+                                <img src="images/css_tip/img1.jpg" />
+                                <figcaption>핀터레스트 이미지 타입 1번 입니다아~~~</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/css_tip/img2.jpg" />
+                                <figcaption>핀터레스트 이미지 타입 2번 입니다아~~~</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/css_tip/img3.jpg" />
+                                <figcaption>핀터레스트 이미지 타입 3번 입니다아~~~</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/css_tip/img4.jpg" />
+                                <figcaption>핀터레스트 이미지 타입 4번 입니다아~~~</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/css_tip/img5.jpg" />
+                                <figcaption>핀터레스트 이미지 타입 5번 입니다아~~~</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/css_tip/img1.jpg" />
+                                <figcaption>핀터레스트 이미지 타입 6번 입니다아~~~</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/css_tip/img2.jpg" />
+                                <figcaption>핀터레스트 이미지 타입 7번 입니다아~~~</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/css_tip/img3.jpg" />
+                                <figcaption>핀터레스트 이미지 타입 8번 입니다아~~~</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/css_tip/img4.jpg" />
+                                <figcaption>핀터레스트 이미지 타입 9번 입니다아~~~</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/css_tip/img5.jpg" />
+                                <figcaption>핀터레스트 이미지 타입 10번 입니다아~~~</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/css_tip/img1.jpg" />
+                                <figcaption>핀터레스트 이미지 타입 11번 입니다아~~~</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/css_tip/img2.jpg" />
+                                <figcaption>핀터레스트 이미지 타입 12번 입니다아~~~</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- 9 -->
+                
+                <!-- 10 -->
+                <div class="comp_cont" id="cont10">
+                    <p class="comp_tit">10. 파일 업로드 디자인<span class="state1">css 필요, jquery도</span></p>
+                    <div>
+                        <div class="filebox">
+                            <input class="upload-name" value="파일선택" disabled="disabled">
+                            <label for="ex_filename">업로드</label>
+                            <input type="file" id="ex_filename" class="upload-hidden">
+                        </div>
+                    </div>
+                </div>
+                <!-- 10 -->
+                
+                <!-- 11 -->
+                <div class="comp_cont" id="cont11">
+                    <p class="comp_tit">11. 테이블 스크롤 내릴 시 thead 고정<span class="state1">css 필요</span></p>
+                    <div class="tb_wrap">
+                        <div class="list_table tb_box">
+                            <table>
+                                <colgroup>
+                                    <col style="width:18%;" />
+                                    <col style="width:23%;" />
+                                    <col style="width:auto;" />
+                                    <col style="width:17%;" />
+                                    <col style="width:17%;" />
+                                </colgroup>
+                                <thead class="fixed_top">
+                                    <tr>
+                                        <th>접수일자</th>
+                                        <th>민원접수번호</th>
+                                        <th>검체번호</th>
+                                        <th>검사수수료</th>
+                                        <th>검사진행현황</th>
+                                    </tr> 
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>O20200318-37300-0133576</td>
+                                        <td>1812-CKA-158873512</td>
+                                        <td>84,700</td>
+                                        <td><span class="state_dote1">검사중</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-03-18</td>
+                                        <td>O20200318-37300-0133576</td>
+                                        <td>1812-CKA-158873512</td>
+                                        <td>84,700</td>
+                                        <td><span class="state_dote2">발행완료</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-03-18</td>
+                                        <td>O20200318-37300-0133576</td>
+                                        <td>1812-CKA-158873512</td>
+                                        <td>84,700</td>
+                                        <td><span class="state_dote1">검사중</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-03-18</td>
+                                        <td>O20200318-37300-0133576</td>
+                                        <td>1812-CKA-158873512</td>
+                                        <td>84,700</td>
+                                        <td><span class="state_dote2">발행완료</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-03-18</td>
+                                        <td>O20200318-37300-0133576</td>
+                                        <td>1812-CKA-158873512</td>
+                                        <td>84,700</td>
+                                        <td><span class="state_dote1">검사중</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-03-18</td>
+                                        <td>O20200318-37300-0133576</td>
+                                        <td>1812-CKA-158873512</td>
+                                        <td>84,700</td>
+                                        <td><span class="state_dote2">발행완료</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-03-18</td>
+                                        <td>O20200318-37300-0133576</td>
+                                        <td>1812-CKA-158873512</td>
+                                        <td>84,700</td>
+                                        <td><span class="state_dote1">검사중</span></td>
+                                    </tr>
+                                </tbody>    
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- 11 -->
+                
+                <!-- 12 -->
+                <div class="comp_cont" id="cont12">
+                    <p class="comp_tit">12. 반응형 리스트 테이블<span class="state1">css 필요</span></p>
+                    <div>
+                        <a href="css_tip_responsive.html" target="_blank"><span class="state2">반응형 새 창</span></a>
+                    </div>
+                </div>
+                <!-- 12 -->
+                
+                <!-- 13 -->
+                <div class="comp_cont" id="cont13">
+                    <p class="comp_tit">13. select 그룹으로 묶기</p>
+                    <div>
+                        <select>
+                            <option>셀렉트 그룹별로 묶기</option>
+                            <optgroup label="셀렉트 그룹 1">
+                                <option>셀렉트 그룹 1-1</option>
+                                <option>셀렉트 그룹 1-2</option>
+                                <option>셀렉트 그룹 1-3</option>
+                            </optgroup>
+                            <optgroup label="셀렉트 그룹 2">
+                                <option>셀렉트 그룹 2-1</option>
+                                <option>셀렉트 그룹 2-2</option>
+                            </optgroup>
+                            <optgroup label="셀렉트 그룹 3">
+                                <option>셀렉트 그룹 3-1</option>
+                                <option>셀렉트 그룹 3-2</option>
+                                <option>셀렉트 그룹 3-3</option>
+                                <option>셀렉트 그룹 3-4</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <!-- 13 -->
+                
+            </div>
+            <!-- con_body -->
+        </div>
+        <div class="navi">
+            <ul>
+                <li><a href="#cont1">css 텍스트 라인</a></li>
+                <li><a href="#cont2">border gradient</a></li>
+                <li><a href="#cont3">menu 배경 자동</a></li>
+                <li><a href="#cont4">모바일 pc버전</a></li>
+                <li><a href="#cont5">여러개</a></li>
+                <li><a href="#cont6">float 가운데</a></li>
+                <li><a href="#cont7">양 옆 높이 동일</a></li>
+                <li><a href="#cont8">양 옆 높이 동일2</a></li>
+                <li><a href="#cont9">핀터레스트</a></li>
+                <li><a href="#cont10">파일 업로드</a></li>
+                <li><a href="#cont11">thead 고정</a></li>
+                <li><a href="#cont12">반응형테이블</a></li>
+                <li class="btn-top"><a href="#header">TOP</a></li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+<!-- 레이어팝업 -->
+<div class="layer_overlay"></div>
+<!-- //레이어팝업 -->

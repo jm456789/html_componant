@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>swiper</title>
+	<link rel="stylesheet" type="text/css" href="css/2020-0-compornent/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/2020-0-compornent/font_face.css" />
+	<link rel="stylesheet" type="text/css" href="css/2020-0-compornent/layout.css" />
+	<script type="text/javascript" src="js/2020-0-compornent/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/2020-0-compornent/layout.js"></script> <!--conpnant 레이아웃 navi js-->
+    
+    <link rel="stylesheet" type="text/css" href="css/swiper/swiper.min.css" /> <!-- swiper 기본 제공 -->
+    <script type="text/javascript" src="js/swiper/swiper.min.js"></script> <!-- swiper 기본 제공 -->
+    <link rel="stylesheet" type="text/css" href="css/swiper/swi-slider.css" /> <!-- 필요한 부분만 가져가서 사용 -->
+    <script type="text/javascript" src="js/swiper/swi-slider.js"></script> <!-- 필요한 부분만 가져가서 사용 -->
+</head>
+<body>
+    
+    <div id="wrap">
+        
+        <script language="JavaScript" src="js/2020-0-compornent/imp_left_menu.js"></script> <!-- 모든페이지 공통-left_menu import -->
+        
+        <div class="inner">
+            <!-- con_body -->    
+            <div id="con_body">
+                <!-- 1. Default Setup -->
+                <div class="comp_cont" id="cont1">
+                    <p class="comp_tit">1. Default Setup</p>
+                    <div class="swiper-container basic hei500">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>                        
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next btn_basic_next"></div>
+                        <div class="swiper-button-prev btn_basic_prev"></div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination basic_pagination"></div>                        
+                    </div>
+                </div>
+                <!-- 1. Default Setup -->
+                
+                <!-- 2. Progress Pagi -->
+                <div class="comp_cont" id="cont2">
+                    <p class="comp_tit">2. Progress Pagi</p>
+                    <div class="swiper-container progress_slider hei500">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide bg1"></div>
+                          <div class="swiper-slide bg2"></div>
+                          <div class="swiper-slide bg3"></div>
+                          <div class="swiper-slide bg1"></div>
+                          <div class="swiper-slide bg2"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination pro_pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next btn_pro_next"></div>
+                        <div class="swiper-button-prev btn_pro_prev"></div>                        
+                    </div>
+                </div>
+                <!-- 2. Progress Pagi -->
+                
+                <!-- 3. Page Info -->
+                <div class="comp_cont" id="cont3">
+                    <p class="comp_tit">3. Page Info</p>
+                    <div class="swiper-container pageinfo hei500">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>                        
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next btn_pageinfo_next"></div>
+                        <div class="swiper-button-prev btn_pageinfo_prev"></div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination pageinfo_pagination"></div>                        
+                    </div>
+                </div>
+                <!-- 3. Page Info -->
+                
+                <!-- 4. Custom Pagi -->
+                <div class="comp_cont" id="cont4">
+                    <p class="comp_tit">4. Custom Pagi <span class="state1">css 필요</span></p>
+                    <div class="swiper-container custom_page">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide hei500"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide hei500"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide hei500"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide hei500"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination custom_page_pagination"></div>                        
+                    </div>
+                </div>
+                <!-- 4. Custom Pagi -->
+                
+                <!-- 5. Scrollbar -->
+                <div class="comp_cont" id="cont5">
+                    <p class="comp_tit">5. Scrollbar</p>
+                    <div class="swiper-container scrollbar hei500">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>
+                        <!-- Add Scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+                <!-- 5. Scrollbar -->
+                
+                <!-- 6. Vertical -->
+                <div class="comp_cont" id="cont6">
+                    <p class="comp_tit">6. Vertical</p>
+                    <div class="swiper-container vertical hei500">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>                        
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination vertical_pagination"></div>                    
+                    </div>
+                </div>
+                <!-- 6. Vertical -->
+                
+                <!-- 7. Space Between -->
+                <div class="comp_cont" id="cont7">
+                    <p class="comp_tit">7. Space Between</p>
+                    <div class="hei500 swiper-container space">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>                        
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination space_pagination"></div>                    
+                    </div>
+                </div>
+                <!-- 7. Space Between -->
+                
+                <!-- 8. multiple -->
+                <div class="comp_cont" id="cont8">
+                    <p class="comp_tit">8. multiple</p>
+                    <div class="hei500 swiper-container multiple">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>                        
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination multiple_pagination"></div>                    
+                    </div>
+                </div>
+                <!-- 8. multiple -->
+                
+                <!-- 9. width-auto -->
+                <div class="comp_cont" id="cont9">
+                    <p class="comp_tit">9. width-auto</p>
+                    <div class="hei500 swiper-container width_auto">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>                        
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination width_auto_pagination"></div>                    
+                    </div>
+                </div>
+                <!-- 9. width-auto -->
+                
+                <!-- 10. Centered -->
+                <div class="comp_cont" id="cont10">
+                    <p class="comp_tit">10. Centered</p>
+                    <div class="hei500 swiper-container centered">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>                        
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination centered_pagination"></div>                    
+                    </div>
+                </div>
+                <!-- 10. Centered -->
+                
+                <!-- 11. Centered+width_auto -->
+                <div class="comp_cont" id="cont11">
+                    <p class="comp_tit">11. Centered+width_auto</p>
+                    <div class="hei500 swiper-container c_width_auto">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>                        
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination c_width_auto_pagination"></div>                    
+                    </div>
+                </div>
+                <!-- 11. Centered+width_auto -->
+                
+                <!-- 12. Free -->
+                <div class="comp_cont" id="cont12">
+                    <p class="comp_tit">12. Free</p>
+                    <div class="hei500 swiper-container free">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>                        
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination free_pagination"></div>                    
+                    </div>
+                </div>
+                <!-- 12. Free -->
+                
+                <!-- 13. Multi Row -->
+                <div class="comp_cont" id="cont13">
+                    <p class="comp_tit">13. Multi Row <span class="state1">css 필요</span></p>
+                    <div class="hei500 swiper-container multi_row">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>                        
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination multi_row_pagination"></div>                    
+                    </div>
+                </div>
+                <!-- 13. Multi Row -->
+                
+                <!-- 14. Nested -->
+                <div class="comp_cont" id="cont14">
+                    <p class="comp_tit">14. Nested</p>
+                    <div class="hei500 swiper-container swiper-container-h">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide bg1"></div>
+                          <div class="swiper-slide">
+                            <div class="swiper-container swiper-container-v">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide bg3">Vertical Slide 1</div>
+                                <div class="swiper-slide bg2">Vertical Slide 2</div>
+                                <div class="swiper-slide bg3">Vertical Slide 3</div>
+                                <div class="swiper-slide bg1">Vertical Slide 4</div>
+                                <div class="swiper-slide bg2">Vertical Slide 5</div>
+                              </div>
+                              <div class="swiper-pagination swiper-pagination-v"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide bg2"></div>
+                          <div class="swiper-slide bg3"></div>
+                          <div class="swiper-slide bg1"></div>
+                          <div class="swiper-slide bg2"></div>
+                          <div class="swiper-slide bg3"></div>
+                          <div class="swiper-slide bg1"></div>
+                        </div>                        
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination swiper-pagination-h"></div>                    
+                    </div>
+                </div>
+                <!-- 14. Nested -->
+                
+                <!-- 15. infinite -->
+                <div class="comp_cont" id="cont15">
+                    <p class="comp_tit">15. infinite</p>
+                    <div class="hei500 swiper-container infinite">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>                        
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination infinite_pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next btn_infinite_next"></div>
+                        <div class="swiper-button-prev btn_infinite_prev"></div>
+                    </div>
+                </div>
+                <!-- 15. infinite -->
+                
+                <!-- 16. multiple slider per group -->
+                <div class="comp_cont" id="cont16">
+                    <p class="comp_tit">16. multiple slider per group</p>
+                    <div class="hei500 swiper-container mul_slider_group">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>                        
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination mul_slider_group_pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next btn_mul_slider_group_next"></div>
+                        <div class="swiper-button-prev btn_mul_slider_group_prev"></div>
+                    </div>
+                </div>
+                <!-- 16. multiple slider per group -->
+                
+                <!-- 17. fade -->
+                <div class="comp_cont" id="cont17">
+                    <p class="comp_tit">17. fade</p>
+                    <div class="hei500 swiper-container fade">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination fade_pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next btn_fade_next"></div>
+                        <div class="swiper-button-prev btn_fade_prev"></div>
+                    </div>
+                </div>
+                <!-- 17. fade -->
+                
+                <!-- 18. Cube -->
+                <div class="comp_cont" id="cont18">
+                    <p class="comp_tit">18. Cube</p>
+                    <div class="hei500 swiper-container cube">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination cube_pagination"></div>
+                    </div>
+                </div>
+                <!-- 18. Cube -->
+                
+                <!-- 19. Coverflow -->
+                <div class="comp_cont" id="cont19">
+                    <p class="comp_tit">19. Coverflow <span class="state1">css 필요</span></p>
+                    <div class="hei500 swiper-container coverflow">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination coverflow_pagination"></div>
+                    </div>
+                </div>
+                <!-- 19. Coverflow -->
+                
+                <!-- 20. Flip -->
+                <div class="comp_cont" id="cont20">
+                    <p class="comp_tit">20. Flip</p>
+                    <div class="hei500 swiper-container flip">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination flip_pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next btn_flip_next"></div>
+                        <div class="swiper-button-prev btn_flip_prev"></div>
+                    </div>
+                </div>
+                <!-- 20. Flip -->
+                
+                <!-- 21. Keyboard -->
+                <div class="comp_cont" id="cont21">
+                    <p class="comp_tit">21. Keyboard</p>
+                    <div class="hei500 swiper-container keyboard">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination keyboard_pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next btn_keyboard_next"></div>
+                        <div class="swiper-button-prev btn_keyboard_prev"></div>
+                    </div>
+                </div>
+                <!-- 21. Keyboard -->
+                
+                <!-- 22. Auto Play -->
+                <div class="comp_cont" id="cont22">
+                    <p class="comp_tit">22. Auto Play</p>
+                    <div class="hei500 swiper-container auto">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination auto_pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next btn_auto_next"></div>
+                        <div class="swiper-button-prev btn_auto_prev"></div>
+                    </div>
+                </div>
+                <!-- 22. Auto Play -->
+                
+                <!-- 23. Gallery -->
+                <div class="comp_cont" id="cont23">
+                    <p class="comp_tit">23. Gallery <span class="state1">css 필요</span></p>
+                    <div class="hei500 swiper-container gallery-top">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next btn_gallery_next"></div>
+                        <div class="swiper-button-prev btn_gallery_prev"></div>
+                    </div>
+                    <div class="hei200 swiper-container gallery-thumbs">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 23. Gallery -->
+                
+                <!-- 24. Parallax -->
+                <div class="comp_cont" id="cont24">
+                    <p class="comp_tit">24. Parallax <span class="state1">css 필요</span></p>
+                    <div class="hei500 swiper-container parallax">
+                        <div class="parallax-bg bg1" data-swiper-parallax="-23%"></div>
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="title" data-swiper-parallax="-300">Slide 1</div>
+                            <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                            <div class="text" data-swiper-parallax="-100">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">Slide 2</div>
+                            <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                            <div class="text" data-swiper-parallax="-100">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="title" data-swiper-parallax="-300">Slide 3</div>
+                            <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                            <div class="text" data-swiper-parallax="-100">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination parallax_pagination"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-next btn_parallax_next"></div>
+                        <div class="swiper-button-prev btn_parallax_prev"></div>                        
+                    </div>
+                </div>
+                <!-- 24. Parallax -->
+                
+                <!-- 25. Responsive -->
+                <div class="comp_cont" id="cont25">
+                    <p class="comp_tit">25. Responsive</p>
+                    <div class="hei500 swiper-container responsive">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination responsive_pagination"></div>
+                    </div>
+                </div>
+                <!-- 25. Responsive -->
+                
+                <!-- 26. Auto Height -->
+                <div class="comp_cont" id="cont26">
+                    <p class="comp_tit">26. Auto Height</p>
+                    <div class="hei500 swiper-container auto_h">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                          <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination auto_h_pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next btn_auto_h_next"></div>
+                        <div class="swiper-button-prev btn_auto_h_prev"></div>
+                    </div>
+                </div>
+                <!-- 26. Auto Height -->
+                
+                <!-- 27. 탭 안에 슬라이드 -->
+                <div class="comp_cont" id="cont27">
+                    <p class="comp_tit">27. 탭 안에 슬라이드 <span class="state1">탭 css 필요</span></p>
+                    <div>
+                        <ul class="menu">
+                            <li>
+                                <button>메뉴 1</button>
+                                <div class="swiper-container test hei500">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                                      <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                                      <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                                    </div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next btn_test_next"></div>
+                                    <div class="swiper-button-prev btn_test_prev"></div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination test_pagination"></div>                        
+                                </div>
+                            </li>
+                            <li>
+                                <button>메뉴 2</button>
+                                <div class="swiper-container test2 hei500">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                                      <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                                      <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                                    </div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next btn_test2_next"></div>
+                                    <div class="swiper-button-prev btn_test2_prev"></div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination test2_pagination"></div>                        
+                                </div>
+                            </li>
+                            <li>
+                                <button>메뉴 3</button>
+                                <div class="swiper-container test3 hei500">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide"><img src="images/slick-slider/popup3.jpg" /></div>
+                                      <div class="swiper-slide"><img src="images/slick-slider/popup2.jpg" /></div>
+                                      <div class="swiper-slide"><img src="images/slick-slider/popup1.jpg" /></div>
+                                    </div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next btn_test3_next"></div>
+                                    <div class="swiper-button-prev btn_test3_prev"></div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination test3_pagination"></div>                        
+                                </div>
+                            </li>
+                        </ul>
+                    </div>                    
+                </div>
+                <!-- 27. 탭 안에 슬라이드 -->
+                
+                <!-- 28. custom -->
+                <div class="comp_cont" id="cont28">
+                    <p class="comp_tit">28. custom (ESTsoft - AI PLUS - AI PLUS 소개 : https://www.estsoft.ai/ai-plus)</p>
+                    <div>
+                        <a href="swiper_pop.html" target="_blank">페이지 이동</a>
+                    </div>
+                </div>
+                <!-- 28. custom -->
+                
+                <!-- 29. custom2 -->
+                <div class="comp_cont" id="cont29">
+                    <p class="comp_tit">29. custom2 (남양몰 : https://shopping.namyangi.com/main/main)</p>
+                    <div>
+                        <a href="swiper_pop.html" target="_blank">페이지 이동</a>
+                    </div>
+                </div>
+                <!-- 29. custom2 -->
+                                
+            </div>
+            <!-- con_body -->
+        </div>
+        <div class="navi">
+            <ul>
+                <li><a href="#cont1">1. Default Setup</a></li>
+                <li><a href="#cont2">2. Progress Pagi</a></li>
+                <li><a href="#cont3">3. Page Info</a></li>
+                <li><a href="#cont4">4. Custom Pagi</a></li>
+                <li><a href="#cont5">5. Scrollbar</a></li>
+                <li><a href="#cont6">6. Vertical</a></li>
+                <li><a href="#cont7">7. Space Bet</a></li>
+                <li><a href="#cont8">8. multiple</a></li>
+                <li><a href="#cont9">9. width-auto</a></li>
+                <li><a href="#cont10">10. Centered</a></li>
+                <li><a href="#cont11">11. Centered+w</a></li>
+                <li><a href="#cont12">12. Free</a></li>
+                <li><a href="#cont13">13. Multi Row</a></li>
+                <li><a href="#cont14">14. Nested</a></li>
+                <li><a href="#cont15">15. infinite</a></li>
+                <li><a href="#cont16">16. mul p-group</a></li>
+                <li><a href="#cont17">17. fade</a></li>
+                <li><a href="#cont18">18. Cube</a></li>
+                <li><a href="#cont19">19. Coverflow</a></li>
+                <li><a href="#cont20">20. Flip</a></li>
+                <li><a href="#cont21">21. Keyboard</a></li>
+                <li><a href="#cont22">22. Auto Play</a></li>
+                <li><a href="#cont23">23. Gallery</a></li>
+                <li><a href="#cont24">24. Parallax</a></li>
+                <li><a href="#cont25">25. Responsive</a></li>
+                <li><a href="#cont26">26. Auto Height</a></li>
+                <li><a href="#cont26">27. tab slide</a></li>
+                <li class="btn-top"><a href="#header">TOP</a></li>
+            </ul>
+        </div>
+    </div>
+        
+</body>
+</html>
+
+
+<!-- 레이어팝업 -->
+<div class="layer_overlay"></div>
+<!-- //레이어팝업 -->

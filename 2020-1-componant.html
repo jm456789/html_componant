@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>2020-1-componant</title>
+	<link rel="stylesheet" type="text/css" href="css/2020-0-compornent/layout.css" />
+	<script type="text/javascript" src="js/2020-0-compornent/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/2020-0-compornent/layout.js"></script> <!--conpnant 레이아웃 navi js-->
+    
+    <link rel="stylesheet" type="text/css" href="css/2020-1-compornent/common.css" /> <!-- 전체 componant inner css -->
+    <script src="js/2020-1-compornent/common.js"></script> <!-- nav, datepicker, 전체체크 js  -->
+    <link rel="stylesheet" type="text/css" href="css/2020-1-compornent/jquery-ui.css" /> <!-- 3번째 search-box - datepicker css -->    
+    <script src="js/2020-1-compornent/jquery-ui.js"></script> <!-- 3번째 search-box - datepicker js -->
+</head>
+<body>
+    
+    <div id="wrap">
+        
+        <script language="JavaScript" src="js/2020-0-compornent/imp_left_menu.js"></script> <!-- 모든페이지 공통-left_menu import -->
+        
+        <div class="inner">
+            <!-- con_body -->    
+            <div id="con_body">
+                <!-- skip -->
+                <div class="comp_cont" id="cont1">
+                    <p class="comp_tit">skip</p>
+                    <div class="skip">
+                        <a href="#content" class="skip_cts">본문바로가기</a>
+                        <a href="#nav" class="skip_nav">메뉴바로가기</a>
+                    </div>
+                </div>
+                <!-- skip -->
+                
+                <!-- nav -->
+                <div class="comp_cont" id="cont2">
+                    <p class="comp_tit">nav</p>
+                    <div class="nav">
+                        <ul>
+                            <li>
+                                <a href=""><span>홈</span></a>
+                            </li>
+                            <li>
+                                <div class="nav_view"><a href="">심의신청</a></div>
+                                <div class="nav_view_list">
+                                    <ul>
+                                        <li><a href="">심의소개</a></li>
+                                        <li><a href="">심의방법</a></li>
+                                        <li><a href="">심의신청</a></li>
+                                        <li><a href="">신청현황</a></li>
+                                        <li><a href="">알림마당</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav_view"><a href="">심의신청</a></div>
+                                <div class="nav_view_list">
+                                    <ul>
+                                        <li><a href="">심의소개</a></li>
+                                        <li><a href="">심의방법</a></li>
+                                        <li><a href="">심의신청</a></li>
+                                        <li><a href="">신청현황</a></li>
+                                        <li><a href="">알림마당</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- nav -->
+
+                <!-- search-box -->
+                <div class="comp_cont" id="cont3">
+                    <p class="comp_tit">search-box</p>
+                    <div class="search-box">
+                        <span>회차</span>
+                        <input title="회차" placeholder="회차" type="text" class="w5">
+                        <span>회차명</span>
+                        <input title="회차명" class="w7">
+                        <span>접수일자</span>
+                        <div class="do">
+                            <input id="datepicker1" class="datepicker" type="text"> - <input id="datepicker2" class="datepicker" type="text" >
+                        </div>
+                        <span>심의 개최일자</span>
+                        <div class="do">
+                            <input id="datepicker3" class="datepicker" type="text"> - <input id="datepicker4" class="datepicker" type="text" >
+                        </div>
+                        <span>상태</span>
+                        <select title="상태코드 선택">
+                            <option>== 전체  ==</option>
+                            <option>신청준비</option>
+                            <option>신청중</option>
+                            <option>신청마감</option>
+                        </select>
+                        <button class="search-btn" type="button">조회</button>
+                    </div>
+                </div>
+                <!-- //search-box -->
+
+                <!-- view-table -->
+                <div class="comp_cont" id="cont4">
+                    <p class="comp_tit">view-table</p>
+                    <table class="view-table">
+                        <colgroup>
+                            <col style="width:100px;">
+                            <col style="width:20%;">
+                            <col style="width:100px;">
+                            <col style="width:auto;">
+                            <col style="width:100px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <caption></caption>
+                        <tbody>
+                            <tr>
+                                <th>adv_cust</th>
+                                <td><span><select class="w40"><option></option></select><select class="w30"><option></option></select><select class="w30"><option></option></select></span></td>
+                                <th>adv_no</th>
+                                <td><input type="text" /></td>
+                                <th>trans_count</th>
+                                <td>
+                                    <input type="radio" name="radio" id="ra1" />
+                                    <label for="ra1">라디오 1</label>
+                                    <input type="radio" name="radio" id="ra2" />
+                                    <label for="ra2">라디오 2</label>
+                                    <input type="radio" name="radio" id="ra3" />
+                                    <label for="ra3">라디오 3</label>                        
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>adv_cust</th>
+                                <td><span><select class="w70"><option></option></select><select class="w30"><option></option></select></span></td>
+                                <th>adv_no</th>
+                                <td><input type="text" /></td>
+                                <th>trans_count</th>
+                                <td>
+                                    <input type="checkbox" id="che1" class="ab" />
+                                    <label for="che1">체크박스 1</label>
+                                    <input type="checkbox" id="che2" class="ab" />
+                                    <label for="che2">체크박스 2</label>
+                                    <input type="checkbox" id="che3" class="ab" />
+                                    <label for="che3">체크박스 3</label> 
+                                    <input type="checkbox" id="che4" class="check_all" />
+                                    <label for="che4">전체체크</label>    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>adv_cust</th>
+                                <td><span><select class="w70"><option></option></select><select class="w30"><option></option></select></span></td>
+                                <th>adv_no</th>
+                                <td><input type="text" /></td>
+                                <th>trans_count</th>
+                                <td>
+                                    <input type="checkbox" id="che5" />
+                                    <label for="che5">체크박스 5</label>
+                                    <input type="checkbox" id="che6" />
+                                    <label for="che6">체크박스 6</label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <!-- //view-table -->
+                
+                <!-- list-table -->
+                <div class="comp_cont" id="cont5">
+                    <p class="comp_tit">list-table</p>
+                    <table class="list-table">
+                        <caption class="blind">회차, 회차명, 접수시작일, 접수종료일,심의 개최일자 등 심의회차 정보 목록 입니다.</caption>
+                        <colgroup>
+                            <col style="width:5%">
+                            <col style="width:auto">
+                            <col style="width:10%">
+                            <col style="width:10%">
+                            <col style="width:10%">
+                            <col style="width:10%">
+                            <col style="width:10%">
+                            <col style="width:10%">
+                            <col style="width:12%">
+                        </colgroup>
+                        <thead>
+                            <tr><th scope="col">회차</th>
+                            <th scope="col">회차명</th>
+                            <th scope="col">접수시작일</th>
+                            <th scope="col">접수시작시간</th>
+                            <th scope="col">접수종료일</th>
+                            <th scope="col">접수종료시간</th>
+                            <th scope="col">심의 개최일자</th>
+                            <th scope="col">상태</th>
+                            <th scope="col">접수</th>
+                        </tr></thead>
+                        <tbody>
+                            <tr>
+                                <td>1901</td>
+                                <td><a href="">제2019-1차</a></td>
+                                <td>2019-07-08</td>
+                                <td>10:00</td>
+                                <td>2019-07-12</td>
+                                <td>17:01</td>
+                                <td>2019-07-31</td>
+                                <td>신청마감</td>
+                                <td class="btn-group"><a href="" class="btn-skyL">신청하기</a></td>						
+                            </tr>
+                            <tr>
+                                <td>1901</td>
+                                <td><a href="">제2019-1차</a></td>
+                                <td>2019-07-08</td>
+                                <td>10:00</td>
+                                <td>2019-07-12</td>
+                                <td>17:01</td>
+                                <td>2019-07-31</td>
+                                <td>신청마감</td>
+                                <td>
+                                    <div class="btn-group btn-s">
+                                        <a href="" class="btn-skyL">신청하기</a>
+                                    </div>
+                                </td>						
+                            </tr>
+                            <tr>
+                                <td>1903</td>
+                                <td><a href="">제 2019-3차</a></td>
+                                <td>2019-07-22</td>
+                                <td>01:01</td>
+                                <td>2019-07-31</td>
+                                <td>24:00</td>
+                                <td>2019-08-16</td>
+                                <td>신청중</td>
+                                <td>
+                                    <div class="btn-group btn-s btn-v">
+                                        <a href="" class="btn-skyL">신청하기</a>
+                                        <a href="" class="btn-skyL">신청하기</a>
+                                        <a href="" class="btn-skyL">신청하기</a>
+                                    </div>    
+                                </td>						
+                            </tr>              
+                        </tbody>
+                    </table>
+                </div>
+                <!-- list-table -->
+                
+                <!-- area -->
+                <div class="comp_cont" id="cont6">
+                    <p class="comp_tit">area</p>
+                    <div class="area">
+                        <div class="w30">
+                            <h3>심의의원 그룹관리</h3>
+                            <table class="mini-table">
+                                <caption class="blind">순번, 검토내용, 페이지 순번, 등록일자, 등록자를 나타낸 테이블입니다.</caption>
+                                <colgroup>
+                                    <col style="width:13%" />
+                                    <col style="width:auto" />
+                                    <col style="width:15%" />
+                                    <col style="width:17%" />
+                                    <col style="width:13%" />
+                                </colgroup>
+                                <thead>
+                                <th scope="col">순번</th>
+                                <th scope="col">그룹명</th>
+                                <th scope="col">인원수</th>
+                                <th scope="col">등록일자</th>
+                                <th scope="col">등록자</th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>검토내용1</td>
+                                    <td>2</td>
+                                    <td>2019-04-25</td>
+                                    <td>홍길동</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>검토내용2</td>
+                                    <td>1</td>
+                                    <td>2019-04-14</td>
+                                    <td>홍길동</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="w30">
+                            <h3>심의의원 정보</h3>
+                            <table class="mini-table">
+                                <caption class="blind">순번, 검토내용, 페이지 순번, 등록일자, 등록자를 나타낸 테이블입니다.</caption>
+                                <colgroup>
+                                    <col style="width:11%" />
+                                    <col style="width:auto" />
+                                    <col style="width:13%" />
+                                    <col style="width:14%" />
+                                    <col style="width:21%" />
+                                    <col style="width:14%" />
+                                    <col style="width:13%" />
+                                </colgroup>
+                                <thead>
+                                <th scope="col">순번</th>
+                                <th scope="col">관리번호</th>
+                                <th scope="col">성명</th>
+                                <th scope="col">생년월일</th>
+                                <th scope="col">연락처</th>
+                                <th scope="col">등록일자</th>
+                                <th scope="col">등록자</th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>123456789</td>
+                                    <td>홍길동</td>
+                                    <td>2019-04-25</td>
+                                    <td>010-1000-0000</td>
+                                    <td>2019-04-25</td>
+                                    <td>홍길동</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>123456789</td>
+                                    <td>홍길동</td>
+                                    <td>2019-04-25</td>
+                                    <td>010-1000-0000</td>
+                                    <td>2019-04-25</td>
+                                    <td>홍길동</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="w40">
+                            <h3>심의의원 정보</h3>
+                            <table class="mini-table">
+                                <caption class="blind">순번, 검토내용, 페이지 순번, 등록일자, 등록자를 나타낸 테이블입니다.</caption>
+                                <colgroup>
+                                    <col style="width:11%" />
+                                    <col style="width:auto" />
+                                    <col style="width:13%" />
+                                    <col style="width:14%" />
+                                    <col style="width:21%" />
+                                    <col style="width:14%" />
+                                    <col style="width:13%" />
+                                </colgroup>
+                                <thead>
+                                <th scope="col">순번</th>
+                                <th scope="col">관리번호</th>
+                                <th scope="col">성명</th>
+                                <th scope="col">생년월일</th>
+                                <th scope="col">연락처</th>
+                                <th scope="col">등록일자</th>
+                                <th scope="col">등록자</th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>123456789</td>
+                                    <td>홍길동</td>
+                                    <td>2019-04-25</td>
+                                    <td>010-1000-0000</td>
+                                    <td>2019-04-25</td>
+                                    <td>홍길동</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>123456789</td>
+                                    <td>홍길동</td>
+                                    <td>2019-04-25</td>
+                                    <td>010-1000-0000</td>
+                                    <td>2019-04-25</td>
+                                    <td>홍길동</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- area -->
+                
+                <!-- pagingWrap -->
+                <div class="comp_cont" id="cont7">
+                    <p class="comp_tit">pagingWrap</p>
+                    <div class="pagingWrap">
+                        <div class="pinner">
+                            <a href="" class="btnFirst">첫페이지</a>
+                            <a href="" class="btnPrev">이전페이지</a>
+                            <div class="page">
+                                <strong>1</strong>
+                                <a href="">2</a>
+                                <a href="">3</a>
+                                <a href="">4</a>
+                                <a href="">5</a>
+                            </div>
+                            <a href="" class="btnNext">다음페이지</a>
+                            <a href="" class="btnLast">마지막페이지</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- pagingWrap -->
+                
+                <!-- btn-group -->
+                <div class="comp_cont" id="cont8">
+                    <p class="comp_tit">btn-group</p>
+                    <div class="btn-group center">
+                        <a class="" href="">신청하기</a>
+                        <a class="btn-orange" href="">추가</a>
+                        <a class="btn-gray" href="">삭제</a>
+                    </div>
+                </div>
+                <!-- btn-group -->
+                
+                <!-- btn-group btn-s -->
+                <div class="comp_cont" id="cont9">
+                    <p class="comp_tit">btn-group btn-s</p>
+                    <div class="btn-group btn-s center">
+                        <a class="" href="">추가</a>
+                        <a class="btn-orange" href="">추가</a>
+                        <a class="btn-gray" href="">삭제</a>
+                    </div>
+                </div>
+                <!-- btn-group btn-s -->
+                
+                <!-- num_list -->
+                <div class="comp_cont" id="cont10">
+                    <p class="comp_tit">num_list</p>
+                    <ul class="num_list">
+                        <li>식품등에 관하여 표시 또는 광고하려는 자는 해당 표시ㆍ광고에 대하여 제2항에 따라 등록한 기관 또는 단체(이하 "자율심의기구"라 한다)로부터 미리 심의를 받아야 한다. 다만, 자율심의기구가 구성되지 아니한 경우에는 대통령령으로 정하는 바에 따라 식품의약품안전처장으로부터 심의를 받아야 한다.
+                            <ul class="num_list">
+                                <li>니한 경우에는 대통령령으로 </li>
+                                <li>니한 경우에는 대통령령으로 </li>
+                                <li>니한 경우에는 대통령령으로 </li>
+                                <li>니한 경우에는 대통령령으로 </li>
+                                <li>니한 경우에는 대통령령으로 </li>
+                            </ul>
+                        </li>
+                        <li>식품등에 관하여 표시 또는 광고하려는 자는 해당 표시ㆍ광고에 대하여 제2항에 따라 등록한 기관 또는 단체(이하 "자율심의기구"라 한다)로부터 미리 심의를 받아야 한다. 다만, 자율심의기구가 구성되지 아니한 경우에는 대통령령으로 정하는 바에 따라 식품의약품안전처장으로부터 심의를 받아야 한다.</li>
+                        <li>식품등에 관하여 표시 또는 광고하려는 자는 해당 표시ㆍ광고에 대하여 제2항에 따라 등록한 기관 또는 단체(이하 "자율심의기구"라 한다)로부터 미리 심의를 받아야 한다. 다만, 자율심의기구가 구성되지 아니한 경우에는 대통령령으로 정하는 바에 따라 식품의약품안전처장으로부터 심의를 받아야 한다.</li>
+                    </ul>
+                </div>
+                <!-- num_list -->
+                
+            </div>
+            <!-- con_body -->
+        </div>
+        <div class="navi">
+            <ul>
+                <li><a href="#cont1">skip</a></li>
+                <li><a href="#cont2">nav</a></li>
+                <li><a href="#cont3">search-box</a></li>
+                <li><a href="#cont4">view-table</a></li>
+                <li><a href="#cont5">list-table</a></li>
+                <li><a href="#cont6">area</a></li>
+                <li><a href="#cont7">pagingWrap</a></li>
+                <li><a href="#cont8">btn-group</a></li>
+                <li><a href="#cont9">btn-group btn-s</a></li>
+                <li><a href="#cont10">num_list</a></li>
+                <li class="btn-top"><a href="#header">TOP</a></li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+<!-- 레이어팝업 -->
+<div class="layer_overlay"></div>
+<!-- //레이어팝업 -->

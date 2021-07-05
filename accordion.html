@@ -1,0 +1,287 @@
+<!Doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Accordion</title>
+	<link rel="stylesheet" type="text/css" href="css/2020-0-compornent/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/2020-0-compornent/font_face.css" />
+    <link rel="stylesheet" type="text/css" href="css/2020-0-compornent/layout.css" />
+	<script type="text/javascript" src="js/accordion/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/2020-0-compornent/layout.js"></script> <!--conpnant 레이아웃 navi js-->
+    
+    <link rel="stylesheet" type="text/css" href="css/accordion/accordion.css" /> <!-- 안가져가도 된다~ -->
+    <script type="text/javascript" src="js/accordion/accordion.js"></script> <!-- 필요한 것만 가져다 쓰기 -->
+</head>
+<body>
+    
+    <div id="wrap">
+        
+        <script language="JavaScript" src="js/2020-0-compornent/imp_left_menu.js"></script> <!-- 모든페이지 공통-left_menu import -->
+        
+        <div class="inner">
+            <!-- con_body -->    
+            <div id="con_body">
+                
+                <!-- list1 -->
+                <div class="comp_cont" id="cont1">
+                    <p class="comp_tit">list1. 제일 기본. 클릭한 것만 하위메뉴 보임(탭. 웹 접근성o)</p>
+                    <div class="list accordion1">
+                        <ul>
+                            <li>
+                                <a href=""><span>List1</span></a>
+                                <ul>
+                                    <li><a href="">list1</a></li>
+                                    <li><a href="">list2</a></li>
+                                    <li><a href="">list3</a></li>
+                                    <li><a href="">list4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><span>List2</span></a>
+                                <ul>
+                                    <li><a href="">list1</a></li>
+                                    <li><a href="">list2</a></li>
+                                    <li><a href="">list3</a></li>
+                                    <li><a href="">list4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><span>List3</span></a>
+                                <ul>
+                                    <li><a href="">list1</a></li>
+                                    <li><a href="">list2</a></li>
+                                    <li><a href="">list3</a></li>
+                                    <li><a href="">list4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- list1 -->
+                
+                <!-- list1-2 -->
+                <div class="comp_cont" id="cont1-2">
+                    <p class="comp_tit">list1-2. 탭 영역과 그 하위에 있는 컨텐츠 영역 분리.(웹 접근성X)</p>
+                    <div class="tab_separation">
+                        <ul class="m_menu_tab tab_view">
+                            <li><button type="button" class="on">치즈볼</button></li>
+                            <li><button type="button">비쥬얼 음료</button></li>
+                            <li><button type="button">세트메뉴</button></li>
+                        </ul>
+                        <ul class="m_menu_inner tab_cont tab_cont1">
+                            <li>
+                                <a href="">
+                                    <p class="menu_tit">모짜렐라 치즈볼</p>
+                                    <p class="menu_txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="menu_tit">크림치즈볼</p>
+                                    <p class="menu_txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="menu_tit">체다치즈볼</p>
+                                    <p class="menu_txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="menu_tit">고다치즈볼</p>
+                                    <p class="menu_txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="m_menu_inner tab_cont tab_cont2">
+                            <li>
+                                <a href="">
+                                    <p class="menu_tit">레몬 에이드</p>
+                                    <p class="menu_txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="menu_tit">베리 에이드</p>
+                                    <p class="menu_txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="menu_tit">블루 레몬 에이드</p>
+                                    <p class="menu_txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="menu_tit">라임 에이드</p>
+                                    <p class="menu_txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="m_menu_inner tab_cont tab_cont3">
+                            <li>
+                                <a href="">
+                                    <p class="menu_tit">준비중입니다</p>
+                                    <p class="menu_txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="menu_tit">준비중입니다</p>
+                                    <p class="menu_txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="menu_tit">준비중입니다</p>
+                                    <p class="menu_txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="menu_tit">준비중입니다</p>
+                                    <p class="menu_txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- list1-2 -->
+                
+                <!-- list2 -->
+                <div class="comp_cont" id="cont2">
+                    <p class="comp_tit">list2. 제일 기본.</p>
+                    <div class="list accordion2">
+                        <ul>
+                            <li>
+                                <a href=""><span>List1</span></a>
+                                <ul>
+                                    <li><a href="">list1</a></li>
+                                    <li><a href="">list2</a></li>
+                                    <li><a href="">list3</a></li>
+                                    <li><a href="">list4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><span>List2</span></a>
+                                <ul>
+                                    <li><a href="">list1</a></li>
+                                    <li><a href="">list2</a></li>
+                                    <li><a href="">list3</a></li>
+                                    <li><a href="">list4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><span>List3</span></a>
+                                <ul>
+                                    <li><a href="">list1</a></li>
+                                    <li><a href="">list2</a></li>
+                                    <li><a href="">list3</a></li>
+                                    <li><a href="">list4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- list2 -->
+                
+                <!-- list3 -->
+                <div class="comp_cont" id="cont3">
+                    <p class="comp_tit">list3. 슬라이드 업, 다운(.list ul ul에 height:100%줬더니 버벅거렸었음)</p>
+                    <div class="list accordion3">
+                        <ul>
+                            <li>
+                                <a href=""><span>List1</span></a>
+                                <ul>
+                                    <li><a href="">list1</a></li>
+                                    <li><a href="">list2</a></li>
+                                    <li><a href="">list3</a></li>
+                                    <li><a href="">list4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><span>List2</span></a>
+                                <ul>
+                                    <li><a href="">list1</a></li>
+                                    <li><a href="">list2</a></li>
+                                    <li><a href="">list3</a></li>
+                                    <li><a href="">list4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><span>List3</span></a>
+                                <ul>
+                                    <li><a href="">list1</a></li>
+                                    <li><a href="">list2</a></li>
+                                    <li><a href="">list3</a></li>
+                                    <li><a href="">list4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- list3 -->
+                
+                <!-- list4 -->
+                <div class="comp_cont" id="cont4">
+                    <p class="comp_tit">list4. 슬라이드 업, 다운. ver2(.list ul ul에 height:100%줬더니 버벅거렸었음)</p>
+                    <div class="list accordion4">
+                        <ul>
+                            <li>
+                                <a href=""><span>List1</span></a>
+                                <ul>
+                                    <li><a href="">list1</a></li>
+                                    <li><a href="">list2</a></li>
+                                    <li><a href="">list3</a></li>
+                                    <li><a href="">list4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><span>List2</span></a>
+                                <ul>
+                                    <li><a href="">list1</a></li>
+                                    <li><a href="">list2</a></li>
+                                    <li><a href="">list3</a></li>
+                                    <li><a href="">list4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><span>List3</span></a>
+                                <ul>
+                                    <li><a href="">list1</a></li>
+                                    <li><a href="">list2</a></li>
+                                    <li><a href="">list3</a></li>
+                                    <li><a href="">list4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- list4 -->
+                
+                
+            </div>
+            <!-- con_body -->
+        </div>
+        <div class="navi">
+            <ul>
+                <li><a href="#cont1">기본(탭)</a></li>
+                <li><a href="#cont2">기본</a></li>
+                <li><a href="#cont3">slide</a></li>
+                <li><a href="#cont4">slide ver2</a></li>
+                <li class="btn-top"><a href="#header">TOP</a></li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+<!-- 레이어팝업 -->
+<div class="layer_overlay"></div>
+<!-- //레이어팝업 -->

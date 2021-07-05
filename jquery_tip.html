@@ -1,0 +1,348 @@
+<!Doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>jquery_tip</title>
+	<link rel="stylesheet" type="text/css" href="css/2020-0-compornent/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/2020-0-compornent/font_face.css" />
+    <link rel="stylesheet" type="text/css" href="css/2020-0-compornent/layout.css" />
+	<script type="text/javascript" src="js/accordion/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/2020-0-compornent/layout.js"></script> <!--conpnant 레이아웃 navi js-->
+    
+    <link rel="stylesheet" type="text/css" href="css/jquery_tip/jquery_tip.css" /> <!-- 안가져가도 된다~ -->
+    <script type="text/javascript" src="js/jquery_tip/jquery_tip.js"></script> <!-- 필요한 것만 가져다 쓰기 -->
+    
+    <script type="text/javascript" src="js/jquery_tip/jquery.mCustomScrollbar.js"></script> <!-- 10번 필요 -->
+    <link rel="stylesheet" type="text/css" href="css/jquery_tip/jquery.mCustomScrollbar.min.css" /> <!-- 10번 필요 -->
+</head>
+<body>
+    
+    <div id="wrap">
+        
+        <script language="JavaScript" src="js/2020-0-compornent/imp_left_menu.js"></script> <!-- 모든페이지 공통-left_menu import -->
+        
+        <div class="inner">
+            <!-- con_body -->    
+            <div id="con_body">
+                
+                <!-- 1 -->
+                <div class="comp_cont" id="cont1">
+                    <p class="comp_tit">1. 체크박스 전체체크</p>
+                    <div>
+                        <span>
+                            <input type="checkbox" id="che1" name="checkbox" />
+                            <label for="che1">약관 전체동의</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" id="che2" name="checkbox" />
+                            <label for="che2">개인정보 수집 및 이용 동의</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" id="che3" name="checkbox" />
+                            <label for="che3">이용약관 동의</label>
+                        </span>
+                    </div>
+                </div>
+                <!-- 1 -->
+                
+                <!-- 2 -->
+                <div class="comp_cont" id="cont2">
+                    <p class="comp_tit">2. 체크박스 전체체크2</p>
+                    <div>
+                        <span>
+                            <input type="checkbox" id="che2_1" />
+                            <label for="che2_1">전체 체크박스</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" id="che2_2" class="ab" />
+                            <label for="che2_2">체크박스1</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" id="che2_3" class="ab" />
+                            <label for="che2_3">체크박스2</label>
+                        </span>
+                    </div>
+                </div>
+                <!-- 2 -->
+                
+                <!-- 3 -->
+                <div class="comp_cont" id="cont3">
+                    <p class="comp_tit">3. 하위메뉴 있을때만 클래스 추가. 이걸로 하위메뉴 있을 때만 화살표같은거 추가해줌</p>
+                    <div>
+                        <ul class="menu_add">
+                            <li>
+                                <a href="">list1</a>
+                                <ul>
+                                    <li><a href="">list1-1</a></li>
+                                    <li><a href="">list1-2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">list2</a>
+                                <ul>
+                                    <li><a href="">list2-1</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">list3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 3 -->
+                
+                <!-- 4 -->
+                <div class="comp_cont" id="cont4">
+                    <p class="comp_tit">4. 체크 됐을 때 html에 클래스 추가</p>
+                    <div>
+                        <input type="checkbox" id="che4" />
+                        <label for="che4">체크 됐을 때 body에 클래스 추가~</label>
+                    </div>
+                </div>
+                <!-- 4 -->
+                
+                <!-- 5 -->
+                <div class="comp_cont" id="cont5">
+                    <p class="comp_tit">5. 라디오 체크된 div만 보이기</p>
+                    <div>
+                        
+                        <div>
+                            <span>
+                                <input type="radio" id="ra1" name="radio" checked />
+                                <label for="ra1">라디오 1</label>
+                            </span>
+                            <span>
+                                <input type="radio" id="ra2" name="radio" />
+                                <label for="ra2">라디오 2</label>
+                            </span>
+                            <span>
+                                <input type="radio" id="ra3" name="radio" />
+                                <label for="ra3">라디오 2</label>
+                            </span>
+                        </div>
+                        
+                        <div>
+                            <div class="radio_cont1">라디오 1의 내용~~</div>
+                            <div class="radio_cont2">라디오 2의 내용~~</div>
+                            <div class="radio_cont3">라디오 3의 내용~~</div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- 5 -->
+                
+                <!-- 6 -->
+                <div class="comp_cont" id="cont6">
+                    <p class="comp_tit">6. 트리 (AI포털 - 8.메뉴관리.html)</p>
+                    <div>
+                        
+                        <div class="tree_box">
+                            <div class="con">
+                                <ul id="tree_menu" class="tree_menu">
+                                    <li class="depth_1"><strong>업무시스템</strong>
+                                        <ul class="depth_2" >
+                                            <li>
+                                                <a href="#none"><em>폴더</em> 마이페이지</a>
+                                                <ul class="depth_3">
+                                                    <li><a href="#none">최신정보가져오기</a></li>
+                                                    <li><a href="#none">수납내역조회</a></li>
+                                                    <li><a href="#none">사납내역거래처확인</a></li>
+                                                    <li><a href="#none">수납내역 거래처확인결과</a></li>
+                                                    <li><a href="#none">매출채권관리</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="last">
+                                                <a href="#none"><em>폴더</em> 상담관리</a>
+                                                <ul class="depth_3">
+                                                    <li><a href="#none">최신정보가져오기</a></li>
+                                                    <li><a href="#none">수납내역조회</a></li>
+                                                    <li><a href="#none">사납내역거래처확인</a></li>
+                                                    <li><a href="#none">수납내역 거래처확인결과</a></li>
+                                                    <li class="end"><a href="#none">매출채권관리</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth_1"><strong>업무시스템</strong>
+                                        <ul class="depth_2">
+                                            <li>
+                                                <a href="#none"><em>폴더</em> 마이페이지</a>
+                                                <ul class="depth_3">
+                                                    <li><a href="#none">최신정보가져오기</a></li>
+                                                    <li><a href="#none">수납내역조회</a></li>
+                                                    <li><a href="#none">사납내역거래처확인</a></li>
+                                                    <li><a href="#none">수납내역 거래처확인결과</a></li>
+                                                    <li><a href="#none">매출채권관리</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="last">
+                                                <a href="#none"><em>폴더</em> 상담관리</a>
+                                                <ul class="depth_3">
+                                                    <li><a href="#none">최신정보가져오기</a></li>
+                                                    <li><a href="#none">수납내역조회</a></li>
+                                                    <li><a href="#none">사납내역거래처확인</a></li>
+                                                    <li><a href="#none">수납내역 거래처확인결과</a></li>
+                                                    <li class="end"><a href="#none">매출채권관리</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- 6 -->
+                
+                <!-- 7 -->
+                <div class="comp_cont" id="cont7">
+                    <p class="comp_tit">7. 양 옆 높이 동일하게 flex8 (토토즐 생선뼈 - tea2)</p>
+                    <div>
+                        <p>빨간배경의 타이틀 부분 주목~!<br />
+                        대신 이건 바로바로 반영 안됨.. 마지막에 제이쿼리 돌려줘야 함.</p>
+                        <div class="fishbone_wrap">
+                            <ol>
+                                <li>
+                                    <p><span>1. 비혼율이 높아졌다 비혼율이 높아졌다</span></p>
+                                    <ul>
+                                        <li>비혼세를 받는다 비혼세를 비혼세를</li>
+                                        <li>비혼세를 받는다</li>
+                                        <li>비혼세를 받는다</li>
+                                        <li>결혼가정 세금감면</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><span>2. 비혼율이 높아졌다</span></p>
+                                    <ul>
+                                        <li>비혼세를 받는다</li>
+                                        <li>결혼가정 세금감면</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><span>3. 비혼율이 높아졌다</span></p>
+                                    <ul>
+                                        <li>비혼세를 받는다</li>
+                                        <li>결혼가정 세금감면</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><span>4. 비혼율이 높아졌다</span></p>
+                                    <ul>
+                                        <li>비혼세를 받는다</li>
+                                        <li>결혼가정 세금감면</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><span>5. 비혼율이 높아졌다</span></p>
+                                    <ul>
+                                        <li>비혼세를 받는다</li>
+                                        <li>결혼가정 세금감면</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><span>6. 비혼율이 높아졌다</span></p>
+                                    <ul>
+                                        <li>비혼세를 받는다</li>
+                                        <li>결혼가정 세금감면</li>
+                                    </ul>
+                                </li>
+                            </ol>
+						</div>
+                    </div>
+                </div>
+                <!-- 7 -->
+                
+                <!-- 8 -->
+                <div class="comp_cont" id="cont8">
+                    <p class="comp_tit">8. 버튼 클릭시 이 다음 div 나타내기, 제이쿼리는 하나면은 다 공통으로 씀, 팝업과는 다름(영역) (토토즐 index 있는 부분 - evalu_input.html)</p>
+                    <div>
+                        <div class="btn_evalu_text">
+                            <button type="button" class="btn_sz_md btn_cr2">성취도평가기준</button>
+                            <div class="evalu_explain">
+                                <p class="cont_title">성취도평가</p>
+                                <p class="mt10 point_deep">단원명 출력</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 8 -->
+                
+                <!-- 9 -->
+                <div class="comp_cont" id="cont9">
+                    <p class="comp_tit">9. 버튼 클릭시 나타나는 창 효과 주기~ (토토즐 생선뼈 - stu2)</p>
+                    <div>
+                        <div class="cause_btn">
+                            <button type="button"><span>원인선택</span></button>
+                            <div class="cause_list">
+                                <p class="cause_title"><span>원인선택</span></p>
+                                <ul>
+                                    <li><a href="#">비혼세를 받는다 비혼세를 받는다 비혼세를 받는다</a></li>
+                                    <li><a href="#">결혼자금을 준다</a></li>
+                                    <li><a href="#">집과 차를 제공한다</a></li>
+                                </ul>
+                                <p class="cause_close"><button type="button"><span>닫기</span></button></p>
+                            </div>
+                            <p class="cause_subject">선택한 원인명</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 9 -->
+                
+                <!-- 10 -->
+                <div class="comp_cont" id="cont10">
+                    <p class="comp_tit">10. 스크롤 디자인</p>
+                    <div>
+                        <div class="scroll_box">
+                            <ul>
+                                <li><a href="">1. 가나다</a></li>
+                                <li><a href="">2. 라마바</a></li>
+                                <li><a href="">3. 사아자</a></li>
+                                <li><a href="">4. 차카나파</a></li>
+                                <li><a href="">5. 하나다나</a></li>
+                                <li><a href="">6. 기디니리</a></li>
+                                <li><a href="">7. 미비시응</a></li>
+                                <li><a href="">8. ㅇㅇㅇ</a></li>
+                                <li><a href="">9. 가나다</a></li>
+                                <li><a href="">10. 가나다</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 10 -->
+                
+                <!-- 11 -->
+                <div class="comp_cont" id="cont11">
+                    <p class="comp_tit">11. top 버튼 누르면 맨 위로 부드럽게 올라가기</p>
+                    <div>
+                        <div class="btn_scroll_top">
+                            <button type="button">TOP</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 11 -->
+                
+            </div>
+            <!-- con_body -->
+        </div>
+        <div class="navi">
+            <ul>
+                <li><a href="#cont1">체크박스 전체체크</a></li>
+                <li><a href="#cont2">체크박스 전체체크2</a></li>
+                <li><a href="#cont3">하위메뉴 있을때 클래스 추가</a></li>
+                <li><a href="#cont4">체크돼면 body 클래스 추가</a></li>
+                <li><a href="#cont5">라디오 체크된 div만 보이기</a></li>
+                <li><a href="#cont6">트리구조</a></li>
+                <li><a href="#cont7">양 옆 높이 동일하게</a></li>
+                <li><a href="#cont8">버튼 클릭시 다음 div 나타내기 공통js</a></li>
+                <li><a href="#cont9">버튼 클릭시 나타나는 창 효과</a></li>
+                <li><a href="#cont10"></a></li>
+                <li class="btn-top"><a href="#header">TOP</a></li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
