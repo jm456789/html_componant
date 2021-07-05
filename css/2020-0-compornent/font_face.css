@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/*  에스코어드림  */
+@font-face{
+	font-family:'scoreR';
+	src:url('fonts/scdream4.woff') format('woff'),
+	url('fonts/scdream4.woff2') format('woff'),
+	url('fonts/scdream4.ttf') format('truetype'),
+    local(※);
+    font-weight:normal;
+}
+@font-face{
+	font-family:'scoreEB';
+	src:url('fonts/scdream7.woff') format('woff'),
+	url('fonts/scdream7.woff2') format('woff'),
+    local(※);
+    font-weight:600;
+}
+

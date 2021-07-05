@@ -1,0 +1,41 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.list{}
+.list > ul:after{display:block; clear:both; content:"";}
+.list > ul > li{position:relative; float:left; width:33.33%; }
+.list > ul > li:nth-child(1), .list ul > li:nth-child(1) > ul > li{background-color:#c3c3c3;}
+.list > ul > li:nth-child(2), .list ul > li:nth-child(2) > ul > li{background-color:#989898;}
+.list > ul > li:nth-child(3), .list ul > li:nth-child(3) > ul > li{background-color:#1a73e8;}
+.list > ul > li a{display:block; height:40px; padding:0 15px; color:#fff; line-height:40px; box-sizing:border-box;}
+.list ul ul{position:absolute; left:0; top:40px; width:100%;}
+.list ul ul li{}
+.list ul ul li a{border-top:1px dotted rgba(255,255,255,0.3); font-size:14px; color:rgba(255,255,255,0.7);}
+
+.list .on ul{display:block;}
+
+/* 1 */
+.accordion1 ul ul{display:none;}
+
+/* 1-2 */
+.tab_separation{overflow:hidden;}
+
+.m_menu_tab{overflow:hidden; margin-top:25px; text-align:center;}
+.m_menu_tab li{display:inline-block;}
+.m_menu_tab button{position:relative; padding:0 22px; font-family:'scoreR'; font-size:18px; color:#999; font-weight:bold; transition:0.3s;}
+.m_menu_tab button:after{display:block; position:absolute; left:0; top:0; width:1px; height:18px; background-color:#cfcfcf; content:"";}
+.m_menu_tab li:first-child button:after{display:none;}
+.m_menu_tab button.on{color:#f28c02;}
+.m_menu_tab button:active, .m_menu_tab button:focus{outline:none;}
+
+.m_menu_inner{position:relative; margin-top:30px;}
+.m_menu_inner:after{display:block; position:absolute; left:0; top:-117px; width:120px; height:124px; background:url(../images/bg_lella.png) center center no-repeat; content:""; clear:both;}
+.m_menu_inner li{float:left; width:calc( 25% - 15px); margin-right:20px;}
+.m_menu_inner li:last-child{margin-right:0;}
+.m_menu_inner a{display:block;}
+
+/* 2 */
+.accordion2 ul ul{display:none;}
+
+/* 3 */
+.accordion3 ul ul{display:none;}

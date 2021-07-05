@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.fc_f{color:#fff;}
+
+.color ul{overflow:hidden;}
+.color li{float:left; width:calc( 100%/10 - 14px); margin-right:14px; margin-bottom:14px; border:1px solid #ccc; box-sizing:border-box; text-align:center;}
+.color li:last-child{margin-right:0;}
+.color li div:first-child{height:50px; line-height:50px; color:#fff; font-weight:bold;}
+.color li div:last-child{padding:7px 0; background-color:#fff; font-size:13px;}
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/*  본고딕    */
+@font-face{
+	font-family:'bonT';
+	src:url('fonts/NotoSans-Thin.eot'),
+    url('fonts/NotoSans-Thin.eot?#iefix') format('embedded-opentype'),
+    url('fonts/NotoSans-Thin.otf') format('opentype'),
+	url('fonts/NotoSans-Thin.woff') format('woff'),
+	url('fonts/NotoSans-Thin.woff2') format('woff'),
+    local(※);
+}
+@font-face{
+	font-family:'bonL';
+	src:url('fonts/NotoSans-Light.eot'),
+    url('fonts/NotoSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/NotoSans-Light.otf') format('opentype'),
+	url('fonts/NotoSans-Light.woff') format('woff'),
+	url('fonts/NotoSans-Light.woff2') format('woff'),
+    local(※);
+}
+@font-face{
+	font-family:'bonDL';
+	src:url('fonts/NotoSans-DemiLight.eot'),
+    url('fonts/NotoSans-DemiLight.eot?#iefix') format('embedded-opentype'),
+    url('fonts/NotoSans-DemiLight.otf') format('opentype'),
+	url('fonts/NotoSans-DemiLight.woff') format('woff'),
+	url('fonts/NotoSans-DemiLight.woff2') format('woff'),
+    local(※);
+}
+@font-face{
+	font-family:'bonR';
+	src:url('fonts/NotoSans-Regular.eot'),
+    url('fonts/NotoSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/NotoSans-Regular.otf') format('opentype'),
+	url('fonts/NotoSans-Regular.woff') format('woff'),
+	url('fonts/NotoSans-Regular.woff2') format('woff'),
+    local(※);
+}
+@font-face{
+	font-family:'bonM';
+	src:url('fonts/NotoSans-Medium.eot'),
+    url('fonts/NotoSans-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fonts/NotoSans-Medium.otf') format('opentype'),
+	url('fonts/NotoSans-Medium.woff') format('woff'),
+	url('fonts/NotoSans-Medium.woff2') format('woff'),
+    local(※);
+}
+@font-face{
+	font-family:'bonB';
+	src:url('fonts/NotoSans-Bold.eot'),
+    url('fonts/NotoSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/NotoSans-Bold.otf') format('opentype'),
+	url('fonts/NotoSans-Bold.woff') format('woff'),
+	url('fonts/NotoSans-Bold.woff2') format('woff'),
+    local(※);
+}
+@font-face{
+	font-family:'bonBB';
+	src:url('fonts/NotoSans-Black.eot'),
+    url('fonts/NotoSans-Black.eot?#iefix') format('embedded-opentype'),
+    url('fonts/NotoSans-Black.otf') format('opentype'),
+	url('fonts/NotoSans-Black.woff') format('woff'),
+	url('fonts/NotoSans-Black.woff2') format('woff'),
+    local(※);
+}
